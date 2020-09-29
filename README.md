@@ -23,15 +23,14 @@ the code in the folder **graphql**.
 Installation of the current database:
 ```shell script
 docker run --detach --publish 5432:5432 -e POSTGRES_PASSWORD=postgres --name postgres postgres:10.12
-npx prisma migrate save --experimental
-npx prisma migrate up --experimental
-npx prisma generate
 ```
 
 To launch the application :
 
 ```shell script
 npm ci
+npm run migrate
+npm run generate
 ```
 
 ## Contribution
