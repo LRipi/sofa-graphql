@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "lib": [
+      "esnext"
+    ],
+    "strict": true,
+    "resolveJsonModule": true,
+    "rootDir": "./api",
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "nexus/typescript-language-service"
+      }
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ],
+    "esModuleInterop": true
+  },
+  "include": [
+    "generated",
+    "types.d.ts",
+    "./api"
+  ]
+}
